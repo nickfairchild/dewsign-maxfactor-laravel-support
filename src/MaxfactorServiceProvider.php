@@ -131,7 +131,7 @@ class MaxfactorServiceProvider extends ServiceProvider
     private function registerViewInactiveMacro()
     {
         \Illuminate\View\View::macro('whenActive', function ($model) {
-            abort_if(Gate::denies('viewInactive', $model), 503);
+//            abort_if(Gate::denies('viewInactive', $model), 503);
             return $this;
         });
     }
