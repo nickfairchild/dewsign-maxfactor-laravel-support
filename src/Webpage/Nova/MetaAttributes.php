@@ -19,7 +19,8 @@ class MetaAttributes
             Text::make('H1')->hideFromIndex(),
             Text::make('Browser Title')->hideFromIndex(),
             Text::make('Nav Title')->hideFromIndex(),
-            Textarea::make('Meta Description')
+            Textarea::make('Meta Description'),
+            Text::make('Meta Robots'),
         ];
     }
 }

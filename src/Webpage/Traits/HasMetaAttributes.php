@@ -15,6 +15,7 @@ trait HasMetaAttributes
         'h1',
         'meta_description',
         'nav_title',
+        'meta_robots',
     ];
 
     private $metaAttributesDefaults = [
@@ -78,6 +79,16 @@ trait HasMetaAttributes
     public function getNavTitleAttribute()
     {
         return $this->getMetaAttributesField('nav_title');
+    }
+
+    public function setMetaRobotsAttribute($value)
+    {
+        $this->setMetaAttributesField('meta_robots', $value);
+    }
+
+    public function getMetaRobotsAttribute()
+    {
+        return $this->getMetaAttributesField('meta_robots');
     }
 
     protected function setMetaAttributesField($field, $value)
